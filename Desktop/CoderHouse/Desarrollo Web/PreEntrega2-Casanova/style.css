@@ -1,0 +1,550 @@
+/* -------Estilos Generales------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Spartan', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+:root {
+  --main-color: #dea34a;
+  --bg-color: #fff;
+  --second-bg-color: #f5ead8;
+  --third-bg-color: #303030;
+  --text-color: #202020;
+  --second-text-color: #303030;
+  --third-text-color: #fff;
+}
+
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: var(--text-color);
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--second-text-color);
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--second-text-color);
+}
+
+p {
+  font-size: 16px;
+  color: var(--second-text-color);
+  margin: 15px 0 20px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: var(--bg-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all .45s ease;
+  margin: 20px 0px;
+}
+
+.button:hover {
+  transform: scale(0.9);
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: var(--text-color);
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--second-text-color);
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--second-text-color);
+}
+
+p {
+  font-size: 16px;
+  color: var(--second-text-color);
+  margin: 15px 0 20px 0;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.nav-link .active {
+  color: var(--main-color);
+}
+
+
+/* ------- Home - estilos sección Navbar ------- */
+
+.navbar-brand {
+  width: 42%;
+}
+
+.navbar-collapse ul {
+  justify-content: flex-end;
+
+}
+
+/* ------- Home - estilos sección Hero ------- */
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+  background-image: url("img/hero2.png");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: top 25% right 0;
+}
+
+/* ------- Home - estilos sección Benefits ------- */
+
+.benefits .row {
+  margin: 0 5px 0 5px;
+}
+
+.benefitsCol {
+  padding: 10px 10px;
+  border-radius: 10px;
+  min-width: 250px;
+  margin: 10px 10px;
+  border: 1px solid var(--second-bg-color);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+
+}
+
+.benefitsCol:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.benefitsCol i {
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+.benefitsCol h3 {
+  font-size: 20px;
+}
+
+.benefitsCol h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: var(--main-color);
+  background-color: var(--second-bg-color);
+}
+
+/* ------- Home - Estilos sección Features Products ------- */
+
+.product .row {
+  margin: 0 10px;
+}
+
+.product h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.product p {
+  text-align: center;
+}
+
+.productCol {
+  min-width: 280px;
+  max-width: 320px;
+  padding: 10px 12px;
+  border: 1px solid var(--second-bg-color);
+  border-radius: 25px;
+  transition: .2s;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  margin: 15px 10px;
+}
+
+.productCol:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.04);
+  transition: 0.4s;
+
+}
+
+
+.productCol img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.productCol .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.productCol .des span {
+  color: #606063;
+  font-size: 14px;
+}
+
+.productCol .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.productCol .des i {
+  color: rgb(240, 177, 18);
+  font-size: 22px;
+  text-align: center;
+}
+
+.productCol .des h4 {
+  padding-top: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+
+.productCol .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: var(--second-bg-color);
+  font-weight: 700;
+  color: var(--main-color);
+  transition: 0.3s;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.productCol .cart:hover {
+  color: #fff;
+  background: var(--main-color);
+  font-weight: 400;
+}
+
+
+/*  ----------------- Home - bannerCupon ------------------  */
+.bannerCupon {
+  background-image: url("img/banner/Banner1.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.bannerCupon h4,
+.bannerCupon h2,
+.bannerCupon h6 {
+  color: var(--third-text-color);
+}
+
+
+/*  ----------------- Home - Banner Categorias ------------------  */
+.bannerCol1 {
+  background-image: url(/img/banner/Banner6.png);
+  background-position: left;
+  background-size: cover;
+  height: 40vh;
+  padding: 20px 0 0 40px;
+  margin: 5px;
+}
+
+.bannerCol2 {
+  background-image: url(/img/banner/Banner7.png);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.bannerCol2 span {
+  color: var(--main-color);
+  text-shadow: 1px 1px 2px var(--bg-color), 0 0 1em var(--bg-color), 0 0 0.2em var(--bg-color);
+}
+
+
+.bannerCol3 {
+  background-image: url(/img/banner/Banner3.png);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  margin: 15px 5px;
+  padding: 20px 0 0 40px;
+}
+
+.banner4 H2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bannerCol4 {
+  background-image: url(/img/banner/cat2.png);
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1.0);
+  text-shadow: 1px 1px 2px var(--bg-color), 0 0 1em var(--bg-color), 0 0 0.2em var(--bg-color);
+  height: 50vh;
+  margin: 10px;
+  min-width: 300px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bannerCol5 {
+  background-image: url(/img/banner/cat3.png);
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1.0);
+  text-shadow: 1px 1px 2px var(--bg-color), 0 0 1em var(--bg-color), 0 0 0.2em var(--bg-color);
+  height: 50vh;
+  margin: 10px;
+  min-width: 300px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bannerCol6 {
+  background-image: url(/img/banner/cat1.png);
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1.0);
+  text-shadow: 1px 1px 2px var(--bg-color), 0 0 1em var(--bg-color), 0 0 0.2em var(--bg-color);
+  height: 50vh;
+  margin: 10px;
+  min-width: 300px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bannerCol4:hover,
+.bannerCol5:hover,
+.bannerCol6:hover {
+  filter: grayscale(0.1);
+  text-shadow: 1px 1px 2px var(--bg-color), 0 0 1em var(--bg-color), 0 0 0.2em var(--bg-color);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+  transition: all .45s ease;
+}
+
+
+.footer {
+  background-color: var(--third-bg-color);
+  padding: 40px 20px;
+}
+
+.footer-col h4 {
+  color: var(--bg-color);
+  margin-bottom: 35px;
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  background-color: var(--main-color);
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 15px;
+  color: var(--bg-color);
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--main-color);
+  padding-left: 10px;
+}
+
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(225, 225, 225, 0.2);
+  margin: 0 10px 10x 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  color: var(--third-text-color);
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: var(--second-color);
+  background-color: var(--bg-color);
+}
+
+
+/*  ----------------- Categories ------------------  */
+
+.heroPage {
+  background-image: url("/img/banner/Banner1.png");
+  background-position: top;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroPage h2 {
+  color: var(--third-text-color);
+}
+
+.heroPage p {
+  color: var(--third-text-color);
+}
+
+.nav-pills {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  ----------------- Categories ------------------  */
+.contactUsRow {
+  padding: 10px;
+  margin: 40px 0;
+}
+
+.contactUsCol {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactUsCol h3 {
+  padding-bottom: 20px;
+}
+
+.contactUsCol h4 {
+  padding-bottom: 20px;
+}
+
+.contactUsCol i {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.contactUsCol iframe {
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRow {
+display: flex;
+}
+
+.formCol {
+  min-width: 350px;
+  margin: 0 10px 40px 10px;
+}
+
+
+/* ******************* Mobile 768px ********************** */
+
+@media screen and (max-width:768px) {
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .contactUsCol iframe {
+    width: 100%;
+  }
+
+  .row-cols-auto {
+    width: 80%;
+  }
+}
+
+
+
+
+/* ******************* Mobile 477px ********************** */
+
+@media screen and (max-width:768px) and (max-width:477px) {
+
+  .row-cols-auto {
+    width: 100%;
+  }
+}
