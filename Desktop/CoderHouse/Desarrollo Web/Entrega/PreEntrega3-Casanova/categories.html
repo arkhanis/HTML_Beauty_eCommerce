@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Once Natural Wax</title>
+    <!-- Agrego iconscout-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/ddb4fbf34d.js" crossorigin="anonymous"></script>
+    <!-- link a Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Agrego Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- link al archivo de CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!---------------- Diseño Navbar ---------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" width="30%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="uil uil-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- Diseño Hero ---------------->
+    <section class="heroPage text-center">
+        <h2>#Categories</h2>
+    </section>
+
+    <section class="product my-5">
+        <h2>All Products</h2>
+        <p>Save more with coupons & up to 50% off!</p>
+
+        <!---------------- Diseño de Tabs para las categorias ---------------->
+
+        <div class="container my-5">
+            <nav>
+                <div class="nav justify-content-center nav-tabs" id="nav-tabs" role="tablist">
+
+                    <button class="nav-link" id="HardWaxTab" data-bs-toggle="tab" data-bs-target="#waxTab" type="button"
+                        role="tab" aria-controls="waxTab" aria-selected="false">Wax</button>
+
+                    <button class="nav-link active" id="skinCareTab" data-bs-toggle="tab" data-bs-target="#skinTab"
+                        type="button" role="tab" aria-controls="skinTab" aria-selected="true">Skin Care</button>
+
+                    <button class="nav-link" id="profSupTab" data-bs-toggle="tab" data-bs-target="#profTab"
+                        type="button" role="tab" aria-controls="profTab" aria-selected="false">Profesional
+                        Supplies</button>
+
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+
+                <!---------------- Diseño de Tabs Categoria: Wax ---------------->
+                <div class="tab-pane fade show active p-3" id="waxTab" role="tabpanel" aria-labelledby="HardWaxTab">
+
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="productCol col">
+                            <img src="./img/products/prod1.webp" alt="Hard Wax">
+                            <div class="des">
+                                <span>Wax</span>
+                                <h5>Wax Cubes</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$45.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---------- Diseño de Tabs Categoria: Skin Care ---------->
+
+                <div class="tab-pane fade show active p-3" id="skinTab" role="tabpanel" aria-labelledby="skinCareTab">
+                    
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="productCol col">
+                            <img src="./img/products/prod11.webp" alt="Post Depilatory Body Lotion">
+                            <div class="des">
+                                <span>Skin Care</span>
+                                <h5>Post Depilatory Body Lotion</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$17.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod12.webp" alt="Pre Depilatory Cleansing Lotion">
+                            <div class="des">
+                                <span>Skin Care</span>
+                                <h5>Pre Depilatory Cleansing Lotion</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$17.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod10.webp" alt="Post Depilatory Gel">
+                            <div class="des">
+                                <span>Skin Care</span>
+                                <h5>Post Depilatory Gel</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$17.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod2.webp" alt="Post Depilatory Oil">
+                            <div class="des">
+                                <span>Skin Care</span>
+                                <h5>Post Depilatory Oil</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$17.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------- Diseño de Tabs Categoria: Profesional Supplies -------->
+
+                <div class="tab-pane fade show active p-3" id="profTab" role="tabpanel" aria-labelledby="profSupTab">
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="productCol col">
+                            <img src="./img/products/prod4.webp" alt="Small Wax Warmer">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Small Wax Warmer</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$140.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod9.webp" alt="Cornstarch Powder 3.52 oz.">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Cornstarch Powder 3.52 oz.</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$17.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod7.webp" alt="Esthetician Apron">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Esthetician Apron</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$35.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod15.webp" alt="Facial Sticks - Box of 500pcs">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Facial Sticks - Box of 500pcs</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$13.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="productCol col">
+                            <img src="./img/products/prod3.webp" alt="Medium Spatulas - Box of 500 pcs">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Medium Spatulas - Box of 500 pcs</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$4.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod5.webp" alt="Medium Wax Warmer">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Medium Wax Warmer</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$320.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod6.webp" alt="Bed Paper Roll 21" x 225' Smooth Paper - Box of 12
+                                rolls">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Bed Paper Roll 21" x 225' Smooth Paper - Box of 12 rolls</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$50.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod8.webp" alt="Large Spatulas - Box of 200 pcs">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Large Spatulas - Box of 200 pcs</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$24.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="productCol col">
+                            <img src="./img/products/prod13.webp" alt="Cotton Roll - 1.1 lbs.">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Cotton Roll - 1.1 lbs.</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$8.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod14.webp" alt="Gloves - Box of 100 pcs">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Gloves - Box of 100 pcs</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$8.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="productCol col">
+                            <img src="./img/products/prod16.webp" alt="Professional Starter Waxing Kit">
+                            <div class="des">
+                                <span>Profesional Supplies</span>
+                                <h5>Professional Starter Waxing Kit</h5>
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>$470.0</h4>
+                                <a href="#"><i class="uil uil-shopping-cart cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------- Diseño Footer ---------------->
+    <footer>
+        <section class="footer container-fluid">
+            <div class="row">
+                <div class="footer-col col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" class="text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="#" class="text-decoration-none">Sign In</a></li>
+                        <li><a href="#" class="text-decoration-none">View Cart</a></li>
+                        <li><a href="#" class="text-decoration-none">My Wishlist</a></li>
+                        <li><a href="#" class="text-decoration-none">Track My Order</a></li>
+                        <li><a href="#" class="text-decoration-none">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col">
+                    <h4>Our Categories</h4>
+                    <ul>
+                        <li><a href="categories.html" class="text-decoration-none">Professional Supplies</a></li>
+                        <li><a href="categories.html" class="text-decoration-none">Skin Care</a></li>
+                        <li><a href="categories.html" class="text-decoration-none">Wax</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col">
+                    <h4>Follow up</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/oncenaturalwax/"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.facebook.com/oncenaturalwax"><i class="uil uil-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
