@@ -5,8 +5,8 @@
     --colorButton: #c00f26; 
     --colorWhite: #fff;
     --colorBeige: #cbba9e;
-    --colorBeigeLight: #eaeaea;
-    --colorDark: #2222; 
+    --colorBeigeLight: #fbf1e0;
+    --colorDark: #444; 
 }
 
 *{
@@ -73,9 +73,55 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.producto:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
 }
 
 .producto-imagen{
     max-width: 100%;
     border-radius: 1rem;
+}
+
+.producto-estrella{
+    color: rgb(255, 181, 52);
+}
+
+.producto-detalles{
+    background-color: var(--colorBeigeLight);
+    color: var(--colorDark);
+    padding: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-top: -1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: var(--colorMain);
+    color: var(--colorWhite);
+    padding: 0.4rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--colorBeigeLight);
+}
+
+.producto-agregar:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorMain);
+    border: 2px solid var(--colorBeige);
 }
