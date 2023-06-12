@@ -3,9 +3,9 @@
 :root{
     --colorMain: #c69a55;
     --colorButton: #c00f26; 
-    --colorBg: #fff;
-    --colorBg2: #cbba9e;
-    --colorFont: #2222; 
+    --colorWhite: #fff;
+    --colorBeige: #cbba9e;
+    --colorDark: #2222; 
 }
 
 *{
@@ -26,4 +26,15 @@ li{
 
 a{
     text-decoration: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--colorBeige);
+}
+
+aside{
+    padding: 2rem;
+    color: var(--colorWhite);
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Tercera pre entrega Coderhouse - JavaScript | Cesar Casanova</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Once Natural Wax</h1>
+            </header>
+            <nav>
+                <li><a class="boton-menu boton-volver" href="./index.html"><i class="bi bi-arrow-return-left"></i> Keep
+                        buying</a></li>
+
+                <li><a class="boton-menu boton-carrito active" href="./carrito.html"><i class="bi bi-cart-fill"></i> My
+                        Cart</a></li>
+            </nav>
+
+            <footer>
+                <p class="texto-footer">© 2023 Cesar Casanova</p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Cart</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Your cart is empty <i class="bi bi-emoji-frown"></i></p>
+                <div class="carrito-productos">
+
+                    <div class="carrito-producto">
+                        <img src="./img/prod1.webp" alt="Wax">
+                        <div class="carrito-producto-titulo">
+                            <small>Title</small>
+                            <h3>Wax 01</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Quantity</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Price</small>
+                            <p>$ 17.0</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>SubTotal</small>
+                            <p>$ 17.0</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3"></i></button>
+                    </div>
+
+                    <div class="carrito-producto">
+                        <img src="./img/prod1.webp" alt="Wax">
+                        <div class="carrito-producto-titulo">
+                            <small>Title</small>
+                            <h3>Wax 02</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Quantity</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Price</small>
+                            <p>$ 34.0</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>SubTotal</small>
+                            <p>$ 34.0</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3"></i></button>
+                    </div>
+
+                    <div class="carrito-acciones">
+                        <div class="carrito-acciones-izquierda">
+                            <button class="carrito-acciones-vaciar">Empty your cart</button>
+                        </div>
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total</p>
+                                <p id="total">$ 40</p>
+                            </div>
+                            <button class="carrito-acciones-comprar">Buy Now!</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
