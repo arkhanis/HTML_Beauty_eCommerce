@@ -156,7 +156,7 @@ main {
 }
 
 .producto:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     transition: ease 0.5s;
 }
 
