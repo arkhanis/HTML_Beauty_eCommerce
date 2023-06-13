@@ -7,7 +7,9 @@
     --colorWhite: #fefefe;
     --colorDark: #444;
     --colorGray: #a7a7a7;
-    --colorBackground: #2d3035;
+    --colorBackground: background-color: #1f2023;
+    background-image: linear-gradient(113deg, #1f2023 0%, #1f2023 46%, #6c747f 100%);
+    
     --colorBackground2: #fefefe;
 }
 
