@@ -174,17 +174,3 @@ function cargarProductos() {
 
 cargarProductos();
 
-
-/*
-<div class="producto">
-    <img class="producto-imagen" src="./img/prod1.webp" alt="Wax">
-        <div class="producto-detalles">
-            <h3 class="producto-titulo">Wax 02</h3>
-            <p class="producto-estrella"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i></p>
-            <p class="producto-precio">$ 17.0</p>
-            <button class="producto-agregar">Add to cart</button>
-        </div>
-</div>
-*/
