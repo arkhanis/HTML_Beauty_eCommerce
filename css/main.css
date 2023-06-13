@@ -4,11 +4,11 @@
     --colorMain: #c69a55;
     --colorMainLight: #fbf1e0;
     --colorButton: #c00f26;
-    --colorWhite: #fff;
+    --colorWhite: #fefefe;
     --colorDark: #444;
     --colorGray: #a7a7a7;
-    --colorBackground: #494037;
-    --colorBackground2: #fbf1e0;
+    --colorBackground: #2d3035;
+    --colorBackground2: #fefefe;
 }
 
 * {
@@ -60,8 +60,7 @@ aside {
 }
 
 .logo {
-    font-weight: 400;
-    font-size: 1.3rem;
+    width: 80%;
 }
 
 .menu {
@@ -85,7 +84,7 @@ aside {
 }
 
 .boton-menu.active {
-    background-color: var(--colorMainLight);
+    background-color: var(--colorWhite);
     color: var(--colorMain);
     width: 100%;
     border-top-left-radius: 0.5rem;
@@ -101,7 +100,7 @@ aside {
     bottom: 100%;
     right: 0;
     border-bottom-right-radius: 0.5rem;
-    box-shadow: 0 1rem 0 var(--colorMainLight);
+    box-shadow: 0 1rem 0 var(--colorWhite);
 }
 
 .boton-menu.active::after {
@@ -112,11 +111,23 @@ aside {
     top: 100%;
     right: 0;
     border-top-right-radius: 0.5rem;
-    box-shadow: 0 -1rem 0 var(--colorMainLight);
+    box-shadow: 0 -1rem 0 var(--colorWhite);
 }
 
 .boton-carrito {
     margin-top: 2rem;
+}
+
+.numerito {
+    background-color: var(--colorWhite);
+    color: var(--colorMain);
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.boton-carrito.active .numerito {
+    background-color: var(--colorMain);
+    color: var(--colorWhite);
 }
 
 .texto-footer {
@@ -125,7 +136,7 @@ aside {
 }
 
 main {
-    background-color: var(--colorBackground2);
+    background-color: var(--colorWhite);
     margin: 1rem;
     margin-left: 0;
     border-radius: 0.5rem;
@@ -169,6 +180,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.producto-detalles:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.6s;
 }
 
 .producto-titulo {
@@ -202,9 +219,9 @@ main {
     gap: 1.5rem;
 }
 
-.carrito-vacio {
+.carrito-vacio,
+.carrito-comprado {
     color: var(--colorMain);
-    display: none;
 }
 
 .carrito-productos {
@@ -254,10 +271,10 @@ main {
     color: var(--colorMain);
     cursor: pointer;
     box-shadow: 5px 5px 20px var(--colorGray);
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.carrito-acciones-vaciar:hover{
+.carrito-acciones-vaciar:hover {
     transform: scale(1.05);
     transition: ease 0.3s;
 }
@@ -271,15 +288,15 @@ main {
     color: var(--colorWhite);
     cursor: pointer;
     box-shadow: 5px 5px 20px var(--colorGray);
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.carrito-acciones-derecha{
+.carrito-acciones-derecha {
     display: flex;
 }
 
-.carrito-acciones-total{
+.carrito-acciones-total {
     display: flex;
     background-color: var(--colorMainLight);
     padding: 0.7rem;
@@ -287,10 +304,15 @@ main {
     border-bottom-left-radius: 1rem;
     color: var(--colorMain);
     font-weight: 600;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    gap: 1rem;
 }
 
-.carrito-acciones-comprar:hover{
+.carrito-acciones-comprar:hover {
     transform: scale(1.05);
     transition: ease 0.3s;
+}
+
+.disabled {
+    display: none;
 }
