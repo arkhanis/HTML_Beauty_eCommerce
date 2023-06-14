@@ -192,11 +192,10 @@ botonesCategorias.forEach(boton => {
 
         // Le aplico este condicional para que no haga nada si es id="todos"
         if (e.currentTarget.id != "todos") {
-
+            
             const productoCategoria = productos.find(producto => producto.categoria === e.currentTarget.id);
-            console.log(productoCategoria);
             // Para cambiar el titulo segun la categoria
-            tituloPrincipal.innerText = "";
+            tituloPrincipal.innerText = productoCategoria.categoria;
             // Al hacer clic que filtre por los productos por categorias
             const productosBoton = productos.filter(producto => producto.categoria === e.currentTarget.id);
             cargarProductos(productosBoton);
