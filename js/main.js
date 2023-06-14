@@ -148,15 +148,17 @@ const productos = [
 
 ]
 
+// Traigo toda la informacion que me interesa
 const contenedorProductos = document.querySelector("#contenedor-producto");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+
 
 
 function cargarProductos(productosElegidos) {
     // vacio el contenedor primero para que no duplique productos
     contenedorProductos.innerHTML = "";
-
     // recorro todos los productos para llenarlos dentro de cada tarjeta
     productosElegidos.forEach(producto => {
 
@@ -173,15 +175,17 @@ function cargarProductos(productosElegidos) {
             <button class="producto-agregar" id="${producto.id}" >Add to cart</button>
         </div>
         `;
-
         contenedorProductos.append(div);
     })
+
+    actualizarBotonesAgregar ();
+    console.log(botonesAgregar);
 }
 
 cargarProductos(productos);
 
 
-
+// Incorporacion dinamica de los productos en las tarjeta de producto
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
 
@@ -192,10 +196,11 @@ botonesCategorias.forEach(boton => {
 
         // Le aplico este condicional para que no haga nada si es id="todos"
         if (e.currentTarget.id != "todos") {
-            
-            const productoCategoria = productos.find(producto => producto.categoria === e.currentTarget.id);
+
             // Para cambiar el titulo segun la categoria
+            const productoCategoria = productos.find(producto => producto.categoria === e.currentTarget.id);
             tituloPrincipal.innerText = productoCategoria.categoria;
+
             // Al hacer clic que filtre por los productos por categorias
             const productosBoton = productos.filter(producto => producto.categoria === e.currentTarget.id);
             cargarProductos(productosBoton);
@@ -206,3 +211,22 @@ botonesCategorias.forEach(boton => {
 
     })
 })
+
+// Trabajo sobre los botones "agregar a carrito de la home"
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+    botonesAgregar.forEach( boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+}
+
+const productosEnCarrito = []
+
+function agregarAlCarrito(e){
+    const idBoton = e.currentTarget.id;
+    console.log(idBoton);
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    console.log(productoAgregado);
+}
+
+console.log(productos.categoria);
