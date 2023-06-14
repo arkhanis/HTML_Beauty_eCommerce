@@ -149,10 +149,16 @@ const productos = [
 ]
 
 const contenedorProductos = document.querySelector("#contenedor-producto");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal");
 
 
-function cargarProductos() {
-    productos.forEach(producto => {
+function cargarProductos(productosElegidos) {
+    // vacio el contenedor primero para que no duplique productos
+    contenedorProductos.innerHTML = "";
+
+    // recorro todos los productos para llenarlos dentro de cada tarjeta
+    productosElegidos.forEach(producto => {
 
         const div = document.createElement("div");
         div.classList.add("producto")
@@ -172,5 +178,32 @@ function cargarProductos() {
     })
 }
 
-cargarProductos();
+cargarProductos(productos);
 
+
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+
+        // Para sacar primero la categoria "active"
+        botonesCategorias.forEach(boton => boton.classList.remove("active"))
+        // Le agrego la categoria active al que hace clic
+        e.currentTarget.classList.add("active")
+
+        // Le aplico este condicional para que no haga nada si es id="todos"
+        if (e.currentTarget.id != "todos") {
+
+            const productoCategoria = productos.find(producto => producto.categoria === e.currentTarget.id);
+            console.log(productoCategoria);
+            // Para cambiar el titulo segun la categoria
+            tituloPrincipal.innerText = "";
+            // Al hacer clic que filtre por los productos por categorias
+            const productosBoton = productos.filter(producto => producto.categoria === e.currentTarget.id);
+            cargarProductos(productosBoton);
+        } else {
+            tituloPrincipal.innerHTML = "All Products";
+            cargarProductos(productos);
+        }
+
+    })
+})
