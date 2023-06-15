@@ -33,52 +33,14 @@
         <main>
             <h2 class="titulo-principal">Cart</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Your cart is empty <i class="bi bi-emoji-frown"></i></p>
-                <div class="carrito-productos disabled">
+                <p id="carrito-vacio" class="carrito-vacio">Your cart is empty <i class="bi bi-emoji-frown"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled">
 
                     <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/prod1.webp" alt="Wax">
-                        <div class="carrito-producto-titulo">
-                            <small>Title</small>
-                            <h3>Wax 01</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Quantity</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Price</small>
-                            <p>$ 17.0</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>SubTotal</small>
-                            <p>$ 17.0</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3"></i></button>
+                        <!-- Acá es donde agregaremos contenido desde JS -->
                     </div>
 
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/prod1.webp" alt="Wax">
-                        <div class="carrito-producto-titulo">
-                            <small>Title</small>
-                            <h3>Wax 02</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Quantity</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Price</small>
-                            <p>$ 34.0</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>SubTotal</small>
-                            <p>$ 34.0</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3"></i></button>
-                    </div>
-
-                    <div class="carrito-acciones disabled">
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
                         <div class="carrito-acciones-izquierda">
                             <button class="carrito-acciones-vaciar">Empty your cart</button>
                         </div>
@@ -93,15 +55,14 @@
 
                 </div>
 
-                <p class="carrito-comprado disabled">Muchas gracias por tu compra <i class="bi bi-emoji-smile"></i></p>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra <i class="bi bi-emoji-smile"></i></p>
 
             </div>
 
         </main>
     </div>
 
-
-    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>

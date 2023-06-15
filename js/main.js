@@ -179,7 +179,7 @@ function cargarProductos(productosElegidos) {
         contenedorProductos.append(div);
     })
 
-    actualizarBotonesAgregar ();
+    actualizarBotonesAgregar();
     console.log(botonesAgregar);
 }
 
@@ -216,18 +216,27 @@ botonesCategorias.forEach(boton => {
 // Trabajo sobre los botones "agregar a carrito de la home"
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
-    botonesAgregar.forEach( boton => {
+    botonesAgregar.forEach(boton => {
         boton.addEventListener("click", agregarAlCarrito);
     });
 }
 
-const productosEnCarrito = []
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarrito;
 
-function agregarAlCarrito(e){
+if (productosEnCarritoLS) {
+    productosEnCarrito = productosEnCarritoLS;
+    actualizarNumerito();
+} else {
+    productosEnCarrito = [];
+}
+
+
+function agregarAlCarrito(e) {
     const idBoton = parseInt(e.currentTarget.id);
     const productoAgregado = productos.find(producto => producto.id === idBoton);
-    
-    if(productosEnCarrito.some(producto => producto.id === idBoton)){
+
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
         productosEnCarrito[index].cantidad++;
 
@@ -243,7 +252,7 @@ function agregarAlCarrito(e){
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
 }
 
-function actualizarNumerito (){
+function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 
