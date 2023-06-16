@@ -6,10 +6,7 @@
     --colorButton: #c00f26;
     --colorWhite: #fefefe;
     --colorDark: #444;
-    --colorGray: #a7a7a7;
-    --colorBackground: background-color: #1f2023;
-    background-image: linear-gradient(113deg, #1f2023 0%, #1f2023 46%, #6c747f 100%);
-    
+    --colorGray: #f6f6f6;
     --colorBackground2: #fefefe;
 }
 
@@ -46,7 +43,11 @@ a {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: var(--colorBackground);
+    background-color: var(--colorDark);    
+}
+
+.header-mobile{
+    display: none;
 }
 
 aside {
@@ -59,6 +60,15 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.2s;
+}
+
+.close-menu{
+    display: none;
+}
+
+.main{
+    background-color: var(--colorBackground2);    
 }
 
 .logo {
@@ -83,6 +93,12 @@ aside {
     gap: 0.5rem;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+.boton-menu:hover{
+    color: var(--colorMain);
+    letter-spacing: 1px;
+    transition: all ease .2s;
 }
 
 .boton-menu.active {
@@ -123,8 +139,10 @@ aside {
 .numerito {
     background-color: var(--colorWhite);
     color: var(--colorMain);
+    font-weight: 700;
+    font-size: 16px;
     padding: 0 0.25rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 .boton-carrito.active .numerito {
@@ -157,11 +175,6 @@ main {
     padding-bottom: 1rem;
 }
 
-.producto:hover {
-    transform: scale(1.04);
-    transition: ease 0.5s;
-}
-
 .producto-imagen {
     max-width: 100%;
     border-radius: 1rem;
@@ -172,7 +185,7 @@ main {
 }
 
 .producto-detalles {
-    background-color: var(--colorWhite);
+    background-color: var(--colorGray);
     color: var(--colorDark);
     padding: 0.5rem;
     border-bottom-left-radius: 1rem;
@@ -182,11 +195,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .producto-detalles:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
     transition: 0.6s;
 }
 
@@ -196,21 +207,24 @@ main {
 }
 
 .producto-agregar {
-    border: 0;
+    border: 2px solid var(--colorMain);
     background-color: var(--colorMain);
     color: var(--colorWhite);
     padding: 0.4rem;
     text-transform: uppercase;
     border-radius: 1rem;
     cursor: pointer;
-    border: 2px solid var(--colorMainLight);
-    transition: background-color 0.2s, color 0.2s;
+    border: 1px solid var(--colorWhite);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
 }
 
 .producto-agregar:hover {
-    background-color: var(--colorWhite);
+    background-color: var(--colorMainLight);
     color: var(--colorMain);
-    border: 2px solid var(--colorMain);
+    transform: scale(1.04);
+    border: 1px solid var(--colorMain);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
 }
 
 /*  Carrito  */
@@ -317,4 +331,95 @@ main {
 
 .disabled {
     display: none;
+}
+
+
+/******* MEDIA QUERIES *******/
+
+@media screen and (max-width: 950px){
+    .contenedor-productos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+@media screen and (max-width: 600px){
+    
+    .wrapper{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .header-mobile .logo{
+        width: 40%;
+    }
+
+    .open-menu, .close-menu{
+        font-size: 2rem;
+        background-color: transparent;
+        color: var(--colorMain);
+        border: 0;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        position: absolute;
+        display: block;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    aside{
+        position: fixed;
+        z-index: 9;
+        background-color: var(--colorDark);
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .aside-visible{
+        transform: translateX(0);
+        transition: all ease .5;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    main{
+        margin: 2rem;
+        margin-top: 0;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: 1fr;
+    }
+
+    .boton-menu.active::after,
+    .boton-menu.active::before {
+        display: none;
+    }
+
+    .carrito-producto{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .carrito-acciones{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
 }

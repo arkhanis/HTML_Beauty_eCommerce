@@ -13,7 +13,16 @@
 <body>
 
     <div class="wrapper">
+        <header class="header-mobile">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <button id="open-menu" class="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside>
+            <button id="close-menu" class="close-menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
             <header>
                 <img class="logo" src="./img/logo.png" alt="logo">
             </header>
@@ -55,15 +64,16 @@
 
 
 
-                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra <i
+                <p id="carrito-comprado" class="carrito-comprado disabled"><i
                         class="bi bi-emoji-smile"></i></p>
 
             </div>
 
         </main>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

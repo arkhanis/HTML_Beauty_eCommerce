@@ -6,7 +6,7 @@ const productos = [
         titulo: "Wax Cubes",
         categoria: "Hard Wax",
         imagen: "./img/prod1.webp",
-        precio: 44.9,
+        precio: 45,
         stock: 59
     },
     {
@@ -14,7 +14,7 @@ const productos = [
         titulo: "Pre Depilatory Cleansing Lotion",
         categoria: "Skin Care",
         imagen: "./img/prod12.webp",
-        precio: 17.0,
+        precio: 17,
         stock: 32
     },
     {
@@ -22,15 +22,15 @@ const productos = [
         titulo: "Post Depilatory Body Lotion",
         categoria: "Skin Care",
         imagen: "./img/prod11.webp",
-        precio: 15.0,
+        precio: 15,
         stock: 24
     },
     {
         id: 4,
-        titulo: "Medium Spatulas - Box of 500 pcs",
+        titulo: "Medium Spatulas",
         categoria: "Professional Supplies",
         imagen: "./img/prod3.webp",
-        precio: 11.9,
+        precio: 12,
         stock: 64
     },
     {
@@ -38,7 +38,7 @@ const productos = [
         titulo: "Post Depilatory Oil",
         categoria: "Skin Care",
         imagen: "./img/prod2.webp",
-        precio: 16.9,
+        precio: 17,
         stock: 21
     },
     {
@@ -46,47 +46,47 @@ const productos = [
         titulo: "Post Depilatory Gel",
         categoria: "Skin Care",
         imagen: "./img/prod10.webp",
-        precio: 16.9,
+        precio: 17,
         stock: 43
     },
     {
         id: 7,
-        titulo: "Large Spatulas - Box of 200 pcs",
+        titulo: "Large Spatulas",
         categoria: "Professional Supplies",
         imagen: "./img/prod8.webp",
-        precio: 24.9,
+        precio: 25,
         stock: 34
     },
     {
         id: 8,
-        titulo: "Facial Sticks - Box of 500 pcs",
+        titulo: "Facial Sticks",
         categoria: "Professional Supplies",
         imagen: "./img/prod15.webp",
-        precio: 12.9,
+        precio: 12,
         stock: 27
     },
     {
         id: 9,
-        titulo: "Cotton Roll - 1.1 lbs.",
+        titulo: "Cotton Roll",
         categoria: "Professional Supplies",
         imagen: "./img/prod13.webp",
-        precio: 8.0,
+        precio: 8,
         stock: 41
     },
     {
         id: 10,
-        titulo: "Cornstarch Powder 3.52 oz.",
+        titulo: "Cornstarch Powder",
         categoria: "Professional Supplies",
         imagen: "./img/prod9.webp",
-        precio: 3.9,
+        precio: 4,
         stock: 22
     },
     {
         id: 11,
-        titulo: "Gloves - Box of 100 pcs",
+        titulo: "Gloves",
         categoria: "Professional Supplies",
         imagen: "./img/prod14.webp",
-        precio: 7.9,
+        precio: 8,
         stock: 35
     },
     {
@@ -94,7 +94,7 @@ const productos = [
         titulo: "Small Wax Warmer",
         categoria: "Professional Supplies",
         imagen: "./img/prod4.webp",
-        precio: 45.0,
+        precio: 45,
         stock: 14
     },
     {
@@ -102,7 +102,7 @@ const productos = [
         titulo: "Medium Wax Warmer",
         categoria: "Professional Supplies",
         imagen: "./img/prod5.webp",
-        precio: 199.9,
+        precio: 200,
         stock: 8
     },
     {
@@ -110,31 +110,23 @@ const productos = [
         titulo: "Large Wax Warmer",
         categoria: "Professional Supplies",
         imagen: "./img/prod5.webp",
-        precio: 249.9,
+        precio: 250,
         stock: 8
     },
     {
         id: 15,
-        titulo: "Bed Paper Roll 21 x 225 Smooth Paper - Box of 12 rolls",
+        titulo: "Bed Paper Roll",
         categoria: "Professional Supplies",
         imagen: "./img/prod6.webp",
-        precio: 19.9,
+        precio: 12,
         stock: 19
     },
     {
-        id: 16,
-        titulo: "Bed Paper Roll 27 x 225 High Quality Tissue Paper - Box of 12 rolls",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod6.webp",
-        precio: 39.9,
-        stock: 36
-    },
-    {
         id: 17,
-        titulo: "Professional Starter Waxing Kit",
+        titulo: "Starter Waxing Kit",
         categoria: "Professional Supplies",
         imagen: "./img/prod16.webp",
-        precio: 399.9,
+        precio: 400,
         stock: 9
     },
     {
@@ -142,7 +134,7 @@ const productos = [
         titulo: "Esthetician Apron",
         categoria: "Professional Supplies",
         imagen: "./img/prod7.webp",
-        precio: 16.9,
+        precio: 15,
         stock: 7
     },
 
