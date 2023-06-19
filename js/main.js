@@ -1,144 +1,13 @@
+// Creo el array "productos" vacio
+let productos = [];
 
-// Creo el array de todos los productos de la tienda
-const productos = [
-    {
-        id: 1,
-        titulo: "Wax Cubes",
-        categoria: "Hard Wax",
-        imagen: "./img/prod1.webp",
-        precio: 45,
-        stock: 59
-    },
-    {
-        id: 2,
-        titulo: "Pre Depilatory Cleansing Lotion",
-        categoria: "Skin Care",
-        imagen: "./img/prod12.webp",
-        precio: 17,
-        stock: 32
-    },
-    {
-        id: 3,
-        titulo: "Post Depilatory Body Lotion",
-        categoria: "Skin Care",
-        imagen: "./img/prod11.webp",
-        precio: 15,
-        stock: 24
-    },
-    {
-        id: 4,
-        titulo: "Medium Spatulas",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod3.webp",
-        precio: 12,
-        stock: 64
-    },
-    {
-        id: 5,
-        titulo: "Post Depilatory Oil",
-        categoria: "Skin Care",
-        imagen: "./img/prod2.webp",
-        precio: 17,
-        stock: 21
-    },
-    {
-        id: 6,
-        titulo: "Post Depilatory Gel",
-        categoria: "Skin Care",
-        imagen: "./img/prod10.webp",
-        precio: 17,
-        stock: 43
-    },
-    {
-        id: 7,
-        titulo: "Large Spatulas",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod8.webp",
-        precio: 25,
-        stock: 34
-    },
-    {
-        id: 8,
-        titulo: "Facial Sticks",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod15.webp",
-        precio: 12,
-        stock: 27
-    },
-    {
-        id: 9,
-        titulo: "Cotton Roll",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod13.webp",
-        precio: 8,
-        stock: 41
-    },
-    {
-        id: 10,
-        titulo: "Cornstarch Powder",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod9.webp",
-        precio: 4,
-        stock: 22
-    },
-    {
-        id: 11,
-        titulo: "Gloves",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod14.webp",
-        precio: 8,
-        stock: 35
-    },
-    {
-        id: 12,
-        titulo: "Small Wax Warmer",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod4.webp",
-        precio: 45,
-        stock: 14
-    },
-    {
-        id: 13,
-        titulo: "Medium Wax Warmer",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod5.webp",
-        precio: 200,
-        stock: 8
-    },
-    {
-        id: 14,
-        titulo: "Large Wax Warmer",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod5.webp",
-        precio: 250,
-        stock: 8
-    },
-    {
-        id: 15,
-        titulo: "Bed Paper Roll",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod6.webp",
-        precio: 12,
-        stock: 19
-    },
-    {
-        id: 17,
-        titulo: "Starter Waxing Kit",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod16.webp",
-        precio: 400,
-        stock: 9
-    },
-    {
-        id: 18,
-        titulo: "Esthetician Apron",
-        categoria: "Professional Supplies",
-        imagen: "./img/prod7.webp",
-        precio: 15,
-        stock: 7
-    },
-
-]
+// Hago un fetch del array del archivo JSON
+fetch("./js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    })
 
 // Traigo toda la informacion que me interesa
 const contenedorProductos = document.querySelector("#contenedor-producto");
@@ -174,7 +43,6 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-cargarProductos(productos);
 
 
 // Incorporacion dinamica de los productos en las tarjeta de producto
