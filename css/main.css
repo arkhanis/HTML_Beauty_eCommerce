@@ -2,7 +2,7 @@
 
 :root {
     --colorMain: #c69a55;
-    --colorMainLight: #fbf1e0;
+    --colorMainLight: #ffe3b4;
     --colorButton: #c00f26;
     --colorWhite: #fefefe;
     --colorDark: #444;
@@ -208,7 +208,7 @@ main {
 
 .producto-agregar {
     border: 2px solid var(--colorMain);
-    background-color: var(--colorMain);
+    background: var(--colorMain);
     color: var(--colorWhite);
     padding: 0.4rem;
     text-transform: uppercase;

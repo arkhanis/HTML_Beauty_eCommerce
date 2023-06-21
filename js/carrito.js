@@ -76,6 +76,27 @@ function actualizarBotonesEliminar() {
 
 // Función sobre los botones "eliminar del carrito"
 function eliminarDelCarrito(e) {
+
+    Toastify({
+        text: "Product removed ",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "var(--colorDark)",
+            borderRadius: "2rem",
+            textTransform: "uppercase",
+            fontSize: ".75rem"
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: 10 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+        onClick: function () { } // Callback after click
+    }).showToast();
+
     const idBoton = parseInt(e.currentTarget.id);
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
@@ -105,7 +126,7 @@ function comprarCarrito() {
         icon: 'success',
         title: 'Congratulations',
         text: 'You bought the best products for your shop!',
-      })
+    })
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
