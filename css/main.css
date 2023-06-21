@@ -419,8 +419,27 @@ main {
         .carrito-acciones {
             flex-direction: column;
             align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
             padding: 1rem;
             gap: 1rem;
+        }
+
+        .carrito-acciones-vaciar{
+            width: 300px;
+        }
+
+        .carrito.carrito-acciones-derecha{
+            margin-left: 0;
+        }
+
+        .carrito-acciones-total{
+            width: 150px;
+        }
+
+        .carrito-acciones-comprar{
+            width: 150px;
+            margin-left: 0;
         }
     }
 }
