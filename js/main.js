@@ -34,7 +34,7 @@ function cargarProductos(productosElegidos) {
                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                     class="bi bi-star-fill"></i></p>
             <p class="producto-precio">$${producto.precio}</p>
-            <button class="producto-agregar" id="${producto.id}" >Add to cart</button>
+            <button class="producto-agregar" id="${producto.id}" ><i class="bi bi-bag-plus"></i>  Add to cart</button>
         </div>
         `;
         contenedorProductos.append(div);
