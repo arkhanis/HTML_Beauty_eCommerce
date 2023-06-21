@@ -108,9 +108,27 @@ function eliminarDelCarrito(e) {
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-    cargarProductosCarrito();
+
+    Swal.fire({
+        title: 'Are you sure?',
+        icon: 'question',
+        html:
+            `<b>${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} products</b> will be deleted`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Yes, delete them!',
+        confirmButtonColor: 'var(--colorMain)',
+        cancelButtonText: 'No, keep them!'
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+            cargarProductosCarrito();
+            Swal.fire('Deleted!', '', 'success')
+        }
+    })
+
 }
 
 function actualizarTotal() {
