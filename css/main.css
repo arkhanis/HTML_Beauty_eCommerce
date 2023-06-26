@@ -2,11 +2,11 @@
 
 :root {
     --colorMain: #c69a55;
-    --colorMainLight: #ffe3b4;
+    --colorMainLight: #f9ebd4;
     --colorButton: #c00f26;
     --colorWhite: #fefefe;
     --colorDark: #444;
-    --colorGray: #f6f6f6;
+    --colorGray: #fdf4e4;
     --colorBackground2: #fefefe;
 }
 
@@ -188,6 +188,7 @@ main {
     background-color: var(--colorGray);
     color: var(--colorDark);
     padding: 0.5rem;
+    padding-bottom: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     margin-top: -1rem;
