@@ -3,7 +3,7 @@
 ## About the project 🌟
 ### [Live Demo](https://arkhanis.github.io/HTML_Beauty_eCommerce/)
 ### `Description:` 
-This project is a website for a multipurpose agency.
+This project is a Beauty eCommerce.
 ### `Features:`
 - Build using HTML, CSS, and JavaScript.
 - With categories
