@@ -31,9 +31,3 @@ This project does not require installation. Simply open the folder or double cli
 * [casanovac@gmail.com](casanovac@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/cesar-casanova/)
 * [Porfolio web](https://casanovacesar.com/)
-
-
-
-arkhanis.github.io/HTML_Beauty_eCommerce/
-
-https://github.com/arkhanis/HTML_Beauty_eCommerce/blob/master/img/480shots_so.png
