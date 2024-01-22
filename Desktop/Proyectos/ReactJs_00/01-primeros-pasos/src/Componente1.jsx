@@ -1,6 +1,6 @@
 import React from "react";
 
-const MiComponente = () => {
+const Componente1 = () => {
     
     let usuario = {
         nombre: "Juan",
@@ -10,7 +10,8 @@ const MiComponente = () => {
 
     return (
         <div>
-            <h2>Hola Mundo</h2>
+            <h1>Componente 1</h1>
+            <h2>Utilizando objetos</h2>
 
             <h3>Nombre: <strong>{usuario.nombre}</strong></h3>
             <h3>Edad: {usuario.edad}</h3>
@@ -18,4 +19,4 @@ const MiComponente = () => {
     );
 };
 
-export default MiComponente;
+export default Componente1;

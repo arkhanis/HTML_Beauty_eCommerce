@@ -54,6 +54,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#caja {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #646cff;
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 190px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
