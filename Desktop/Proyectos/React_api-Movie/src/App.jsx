@@ -43,26 +43,31 @@ function App() {
 
   return (
     <>
-      <form onSubmit={submitHandler}>
-        <input
-          type="text"
-          name="search"
-          placeholder="Search for a movie..."
-          value={endPoint}
-          onChange={handleSearch} 
-        />
-        <input type="submit" value="Search"></input>
-      </form>
+      <div className='App'>
 
-      <div className='element'>
-        {container.map((item, index) => {
-          return (
-            <div key={index} className='element-div'>
-              <img src={item.i.imageUrl} alt="movie" />
-              <p>{item.l}</p>
-            </div>
-          )
-        })}
+        <form onSubmit={submitHandler}>
+          <input
+            type="text"
+            placeholder="Search for a movie..."
+            value={endPoint}
+            onChange={handleSearch}
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div className='element'>
+          {container.map((item, index) => {
+            return (
+              <div key={index} className='element-div'>
+                <h2>{item.l}</h2>
+                <img src={item.i.imageUrl} alt="movie" />
+                <p>Starring:</p>
+                <p>{item.s}</p>
+              </div>
+            )
+          })}
+        </div>
+
       </div>
     </>
   )

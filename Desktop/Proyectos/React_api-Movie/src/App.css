@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.app{
+.App{
   width: 100%;
   min-height: 100vh;
   padding: 70px;
@@ -17,15 +17,23 @@
   text-align: center;
 }
 
-input {
-  margin-inline: 1rem;
-  margin-block: 1rem;
-  width: 300px;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #666;
+h2{
+  padding-bottom: 5px;
 }
 
+input {
+  margin-inline: 1rem;
+  margin-block: 2rem;
+  width: 700px;
+  padding: 15px;
+  border: 1px solid #a0a0a0;
+}
+
+button {
+  padding: 15px;
+  border: 1px solid #a0a0a0;
+  border-radius: 1px;
+}
 
 .element {
   margin-block: 2rem;
@@ -38,11 +46,14 @@ input {
 
 .element img{
   max-width: 250px;
+  border-radius: 10px;
 }
 
 .element-div{
   height: 500px;
-  border: 3px solid #111;
+  border: 1px solid #bbbbbb;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 2px #d5d5d5;
   margin: 0 auto;
   padding: 20px;
 }
